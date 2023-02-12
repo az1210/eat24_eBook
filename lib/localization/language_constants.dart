@@ -36,7 +36,7 @@ Locale _locale(String languageCode) {
     case ENGLISH:
       return const Locale(ENGLISH, 'US');
     case HEBREW:
-      return const Locale(HEBREW, 'HE');
+      return const Locale(HEBREW, 'IL');
     case HINDI:
       return const Locale(HINDI, "IN");
     case CHINESE:

@@ -28,6 +28,6 @@ class ColorsRes {
   static Color grey = Color(0xFF333333); //1 background color
   //static Color grey1 = Color(0xFF050505);
   static Color black = Color(0xFF000000); //3
-  static Color textcolor = Color(0xFF7FFFD4);
+  static Color textcolor = Color(0xFFFFFFFF);
   static Color? grey1 = Colors.grey[800];
 }

@@ -1333,6 +1333,8 @@ class DetailPage1 extends State<DetailPage>
       await fluttertts.setLanguage(() {
         if (Language_flag == "hi") {
           return "hi-IN";
+        } else if (Language_flag == "he") {
+          return "he-IL";
         } else if (Language_flag == "en") {
           return "en-IN";
         } else if (Language_flag == "zh") {
@@ -1418,7 +1420,7 @@ class DetailPage1 extends State<DetailPage>
                 children: <Widget>[
                   drawerHeading(context, Language_flag == "ar" ? true : false),
                   Padding(
-                    padding: const EdgeInsets.only(top: 15),
+                    padding: const EdgeInsets.only(top: 0),
                     child: Column(
                       children: [
                         ListTile(
@@ -1677,14 +1679,14 @@ class DetailPage1 extends State<DetailPage>
                   children: [
                     Container(
                       width: MediaQuery.of(context).size.width,
-                      height: MediaQuery.of(context).size.width * 0.7,
+                      height: MediaQuery.of(context).size.width * 0.22,
                       color:
                           dark_mode ? Colors.grey[100] : ColorsRes.grey, //grey1
                       child: Stack(
                         children: [
                           Container(
                             width: MediaQuery.of(context).size.width,
-                            height: MediaQuery.of(context).size.width * 0.5,
+                            height: MediaQuery.of(context).size.width * 0.2,
                             decoration: BoxDecoration(
                               borderRadius: const BorderRadius.only(
                                 bottomLeft: Radius.circular(30.0),
@@ -1803,11 +1805,12 @@ class DetailPage1 extends State<DetailPage>
                                                   ),
                                                 )
                                               : Text(
-                                                  DemoLocalization.of(context)
-                                                      .translate("appName"),
+                                                  'EAT24',
+                                                  // DemoLocalization.of(context)
+                                                  //     .translate("appName"),
                                                   style: TextStyle(
                                                       fontSize: 25,
-                                                      color: ColorsRes.appColor,
+                                                      color: Colors.red[500],
                                                       fontFamily: "Poppins",
                                                       fontWeight:
                                                           FontWeight.w500),
@@ -1833,328 +1836,328 @@ class DetailPage1 extends State<DetailPage>
                                           ),
                                         ],
                                       ),
-                                      Padding(
-                                        padding: const EdgeInsets.only(
-                                          top: 12.0,
-                                          left: 12.0,
-                                          right: 12.0,
-                                        ),
-                                        child: Text(
-                                          () {
-                                            if (Language_flag == "en") {
-                                              return en_Title!;
-                                            } else if (Language_flag == "he") {
-                                              return he_Title!;
-                                            } else if (Language_flag == "hi") {
-                                              return hi_Title!;
-                                            } else if (Language_flag == "zh") {
-                                              return zh_Title!;
-                                            } else if (Language_flag == "es") {
-                                              return es_Title!;
-                                            } else if (Language_flag == "ar") {
-                                              return ar_Title!;
-                                            } else if (Language_flag == "ru") {
-                                              return ru_Title!;
-                                            } else if (Language_flag == "ja") {
-                                              return ja_Title!;
-                                            } else if (Language_flag == "de") {
-                                              return de_Title!;
-                                            } else {
-                                              return en_Title!;
-                                            }
-                                          }(),
-                                          style: TextStyle(
-                                            color: ColorsRes.appColor,
-                                            fontSize: 20,
-                                            fontFamily: "Poppings-ExtraBold",
-                                            fontWeight: FontWeight.bold,
-                                            height: 1.0,
-                                          ),
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.only(
-                                          left: 12.0,
-                                          top: 8.0,
-                                          right: 12.0,
-                                        ),
-                                        child: Text(
-                                          DemoLocalization.of(context)
-                                                  .translate("Written by") +
-                                              " " +
-                                              () {
-                                                if (Language_flag == "en") {
-                                                  return Author_name;
-                                                } else if (Language_flag ==
-                                                    "he") {
-                                                  return he_Author_name;
-                                                } else if (Language_flag ==
-                                                    "hi") {
-                                                  return hi_Author_name;
-                                                } else if (Language_flag ==
-                                                    "zh") {
-                                                  return zh_Author_name;
-                                                } else if (Language_flag ==
-                                                    "es") {
-                                                  return es_Author_name;
-                                                } else if (Language_flag ==
-                                                    "ar") {
-                                                  return ar_Author_name;
-                                                } else if (Language_flag ==
-                                                    "ru") {
-                                                  return ru_Author_name;
-                                                } else if (Language_flag ==
-                                                    "ja") {
-                                                  return ja_Author_name;
-                                                } else if (Language_flag ==
-                                                    "de") {
-                                                  return de_Author_name;
-                                                } else {
-                                                  return Author_name;
-                                                }
-                                              }(),
-                                          style: TextStyle(
-                                            color: dark_mode
-                                                ? ColorsRes.appColor
-                                                : ColorsRes.white,
-                                          ),
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.only(
-                                          left: 12.0,
-                                          right: 12.0,
-                                        ),
-                                        child: Text(
-                                          "$chapter_total " +
-                                              DemoLocalization.of(context)
-                                                  .translate("Chapters"),
-                                          style: TextStyle(
-                                            color: dark_mode
-                                                ? ColorsRes.appColor
-                                                : ColorsRes.white,
-                                          ),
-                                        ),
-                                      ),
+                                      // Padding(
+                                      //   padding: const EdgeInsets.only(
+                                      //     top: 12.0,
+                                      //     left: 12.0,
+                                      //     right: 12.0,
+                                      //   ),
+                                      //   child: Text(
+                                      //     () {
+                                      //       if (Language_flag == "en") {
+                                      //         return en_Title!;
+                                      //       } else if (Language_flag == "he") {
+                                      //         return he_Title!;
+                                      //       } else if (Language_flag == "hi") {
+                                      //         return hi_Title!;
+                                      //       } else if (Language_flag == "zh") {
+                                      //         return zh_Title!;
+                                      //       } else if (Language_flag == "es") {
+                                      //         return es_Title!;
+                                      //       } else if (Language_flag == "ar") {
+                                      //         return ar_Title!;
+                                      //       } else if (Language_flag == "ru") {
+                                      //         return ru_Title!;
+                                      //       } else if (Language_flag == "ja") {
+                                      //         return ja_Title!;
+                                      //       } else if (Language_flag == "de") {
+                                      //         return de_Title!;
+                                      //       } else {
+                                      //         return en_Title!;
+                                      //       }
+                                      //     }(),
+                                      //     style: TextStyle(
+                                      //       color: ColorsRes.appColor,
+                                      //       fontSize: 20,
+                                      //       fontFamily: "Poppings-ExtraBold",
+                                      //       fontWeight: FontWeight.bold,
+                                      //       height: 1.0,
+                                      //     ),
+                                      //   ),
+                                      // ),
+                                      // Padding(
+                                      //   padding: const EdgeInsets.only(
+                                      //     left: 12.0,
+                                      //     top: 8.0,
+                                      //     right: 12.0,
+                                      //   ),
+                                      //   child: Text(
+                                      //     DemoLocalization.of(context)
+                                      //             .translate("Written by") +
+                                      //         " " +
+                                      //         () {
+                                      //           if (Language_flag == "en") {
+                                      //             return Author_name;
+                                      //           } else if (Language_flag ==
+                                      //               "he") {
+                                      //             return he_Author_name;
+                                      //           } else if (Language_flag ==
+                                      //               "hi") {
+                                      //             return hi_Author_name;
+                                      //           } else if (Language_flag ==
+                                      //               "zh") {
+                                      //             return zh_Author_name;
+                                      //           } else if (Language_flag ==
+                                      //               "es") {
+                                      //             return es_Author_name;
+                                      //           } else if (Language_flag ==
+                                      //               "ar") {
+                                      //             return ar_Author_name;
+                                      //           } else if (Language_flag ==
+                                      //               "ru") {
+                                      //             return ru_Author_name;
+                                      //           } else if (Language_flag ==
+                                      //               "ja") {
+                                      //             return ja_Author_name;
+                                      //           } else if (Language_flag ==
+                                      //               "de") {
+                                      //             return de_Author_name;
+                                      //           } else {
+                                      //             return Author_name;
+                                      //           }
+                                      //         }(),
+                                      //     style: TextStyle(
+                                      //       color: dark_mode
+                                      //           ? ColorsRes.appColor
+                                      //           : ColorsRes.white,
+                                      //     ),
+                                      //   ),
+                                      // ),
+                                      // Padding(
+                                      //   padding: const EdgeInsets.only(
+                                      //     left: 12.0,
+                                      //     right: 12.0,
+                                      //   ),
+                                      //   child: Text(
+                                      //     "$chapter_total " +
+                                      //         DemoLocalization.of(context)
+                                      //             .translate("Chapters"),
+                                      //     style: TextStyle(
+                                      //       color: dark_mode
+                                      //           ? ColorsRes.appColor
+                                      //           : ColorsRes.white,
+                                      //     ),
+                                      //   ),
+                                      // ),
                                     ],
                                   ),
                                 ),
                               ],
                             ),
                           ),
-                          Positioned.directional(
-                            textDirection: Directionality.of(context),
-                            top: height! * 0.111,
-                            start: width! * 0.66,
-                            child: Stack(
-                              children: [
-                                Image.asset(
-                                  "assets/images/book_container.png",
-                                ),
-                                Positioned(
-                                  top: 0,
-                                  left: 0,
-                                  child: SizedBox(
-                                    width: width! * 0.261,
-                                    height: height! * 0.2,
-                                    child: Center(
-                                      child: Text(
-                                        () {
-                                          if (Language_flag == "en") {
-                                            return en_Title!;
-                                          } else if (Language_flag == "he") {
-                                            return he_Title!;
-                                          } else if (Language_flag == "hi") {
-                                            return hi_Title!;
-                                          } else if (Language_flag == "zh") {
-                                            return zh_Title!;
-                                          } else if (Language_flag == "es") {
-                                            return es_Title!;
-                                          } else if (Language_flag == "ar") {
-                                            return ar_Title!;
-                                          } else if (Language_flag == "ru") {
-                                            return ru_Title!;
-                                          } else if (Language_flag == "ja") {
-                                            return ja_Title!;
-                                          } else if (Language_flag == "de") {
-                                            return de_Title!;
-                                          } else {
-                                            return en_Title!;
-                                          }
-                                        }(),
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          color: ColorsRes.appColor,
-                                          height: 1.0,
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          Positioned.directional(
-                            textDirection: Directionality.of(context),
-                            top: width! * 0.54,
-                            start: width! * 0.02,
-                            child: LanguageWidget(
-                              update: update,
-                              fromHome: false,
-                            ),
-                          ),
-                          Positioned.directional(
-                            textDirection: Directionality.of(context),
-                            top: width! * 0.54,
-                            start: width! * 0.235,
-                            child: GestureDetector(
-                              onTap: () {
-                                if (bbmarkId == widget.id1) {
-                                  if (bmark) {
-                                    bmark = false;
-                                    setBookmarkId();
-                                    _bmark();
-                                    setIconBmark();
-                                    instance1.insertIntoDb(widget.id1!);
-                                  } else {
-                                    bmark = true;
-                                    _bmark();
-                                    setBookmarkId();
-                                    setIconBmark();
+                          // Positioned.directional(
+                          //   textDirection: Directionality.of(context),
+                          //   top: height! * 0.111,
+                          //   start: width! * 0.66,
+                          //   child: Stack(
+                          //     children: [
+                          //       Image.asset(
+                          //         "assets/images/book_container.png",
+                          //       ),
+                          //       Positioned(
+                          //         top: 0,
+                          //         left: 0,
+                          //         child: SizedBox(
+                          //           width: width! * 0.261,
+                          //           height: height! * 0.2,
+                          //           child: Center(
+                          //             child: Text(
+                          //               () {
+                          //                 if (Language_flag == "en") {
+                          //                   return en_Title!;
+                          //                 } else if (Language_flag == "he") {
+                          //                   return he_Title!;
+                          //                 } else if (Language_flag == "hi") {
+                          //                   return hi_Title!;
+                          //                 } else if (Language_flag == "zh") {
+                          //                   return zh_Title!;
+                          //                 } else if (Language_flag == "es") {
+                          //                   return es_Title!;
+                          //                 } else if (Language_flag == "ar") {
+                          //                   return ar_Title!;
+                          //                 } else if (Language_flag == "ru") {
+                          //                   return ru_Title!;
+                          //                 } else if (Language_flag == "ja") {
+                          //                   return ja_Title!;
+                          //                 } else if (Language_flag == "de") {
+                          //                   return de_Title!;
+                          //                 } else {
+                          //                   return en_Title!;
+                          //                 }
+                          //               }(),
+                          //               textAlign: TextAlign.center,
+                          //               style: TextStyle(
+                          //                 color: ColorsRes.appColor,
+                          //                 height: 1.0,
+                          //               ),
+                          //             ),
+                          //           ),
+                          //         ),
+                          //       ),
+                          //     ],
+                          //   ),
+                          // ),
+                          // Positioned.directional(
+                          //   textDirection: Directionality.of(context),
+                          //   top: width! * 0.54,
+                          //   start: width! * 0.02,
+                          //   child: LanguageWidget(
+                          //     update: update,
+                          //     fromHome: false,
+                          //   ),
+                          // ),
+                          // Positioned.directional(
+                          //   textDirection: Directionality.of(context),
+                          //   top: width! * 0.54,
+                          //   start: width! * 0.235,
+                          //   child: GestureDetector(
+                          //     onTap: () {
+                          //       if (bbmarkId == widget.id1) {
+                          //         if (bmark) {
+                          //           bmark = false;
+                          //           setBookmarkId();
+                          //           _bmark();
+                          //           setIconBmark();
+                          //           instance1.insertIntoDb(widget.id1!);
+                          //         } else {
+                          //           bmark = true;
+                          //           _bmark();
+                          //           setBookmarkId();
+                          //           setIconBmark();
 
-                                    instance1.delete_id(widget.id1!);
-                                  }
-                                }
-                              },
-                              child: Container(
-                                height: height! * 0.055,
-                                width: width! * 0.20,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  color: ColorsRes.appColor,
-                                ),
-                                child: Row(
-                                  children: [
-                                    Padding(
-                                      padding: const EdgeInsets.only(
-                                        left: 10,
-                                        right: 4,
-                                      ),
-                                      child: Image.asset(
-                                        "assets/images/$bookmark_icon.png",
-                                      ),
-                                    ),
-                                    Expanded(
-                                      child: Text(
-                                        DemoLocalization.of(context)
-                                            .translate("bookMark"),
-                                        style: Theme.of(context)
-                                            .textTheme
-                                            .button!
-                                            .merge(
-                                              TextStyle(
-                                                color: ColorsRes.textcolor,
-                                                fontSize: 8,
-                                                fontFamily:
-                                                    "Popinns-ExtraLight",
-                                              ),
-                                            ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ),
-                          Positioned.directional(
-                            textDirection: Directionality.of(context),
-                            top: width! * 0.54,
-                            start: width! * 0.45,
-                            child: GestureDetector(
-                              onTap: () {
-                                if (ccatId == widget.id1) {
-                                  setIndicator();
-                                  setIconIndic();
-                                  setCategory(catId);
-                                  setTitle(widget.title!);
-                                  ScaffoldMessenger.of(context).showSnackBar(
-                                    const SnackBar(
-                                      margin: EdgeInsets.all(70),
-                                      behavior: SnackBarBehavior.floating,
-                                      shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.all(
-                                          Radius.circular(50),
-                                        ),
-                                      ),
-                                      duration: Duration(seconds: 1),
-                                      content: Text(
-                                        "Indicator set Successful !",
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                            fontFamily: 'Times new Roman'),
-                                      ),
-                                    ),
-                                  );
-                                } else {
-                                  setIndicator();
-                                  setState(
-                                    () {
-                                      getIndicator();
-                                      setIconIndic();
-                                    },
-                                  );
-                                  ScaffoldMessenger.of(context).showSnackBar(
-                                    const SnackBar(
-                                      margin: EdgeInsets.all(70),
-                                      behavior: SnackBarBehavior.floating,
-                                      shape: RoundedRectangleBorder(
-                                          borderRadius: BorderRadius.all(
-                                              Radius.circular(50))),
-                                      duration: Duration(seconds: 1),
-                                      content: Text(
-                                        "Remove  Successful !",
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                            fontFamily: 'Times new Roman'),
-                                      ),
-                                    ),
-                                  );
-                                }
-                              },
-                              child: Container(
-                                height: height! * 0.055,
-                                width: width! * 0.20,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  color: ColorsRes.appColor,
-                                ),
-                                child: Row(
-                                  children: [
-                                    Padding(
-                                      padding: const EdgeInsets.only(
-                                        left: 10,
-                                        right: 4,
-                                      ),
-                                      child: Image.asset(
-                                        "assets/images/$pinned_icon.png",
-                                      ),
-                                    ),
-                                    Expanded(
-                                      child: Text(
-                                        DemoLocalization.of(context)
-                                            .translate("pinned"),
-                                        style: TextStyle(
-                                          color: ColorsRes.textcolor,
-                                          fontSize: 8,
-                                          fontFamily: "Popinns-ExtraLight",
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ),
-                          ),
+                          //           instance1.delete_id(widget.id1!);
+                          //         }
+                          //       }
+                          //     },
+                          //     child: Container(
+                          //       height: height! * 0.055,
+                          //       width: width! * 0.20,
+                          //       decoration: BoxDecoration(
+                          //         borderRadius: BorderRadius.circular(10),
+                          //         color: ColorsRes.appColor,
+                          //       ),
+                          //       child: Row(
+                          //         children: [
+                          //           Padding(
+                          //             padding: const EdgeInsets.only(
+                          //               left: 10,
+                          //               right: 4,
+                          //             ),
+                          //             child: Image.asset(
+                          //               "assets/images/$bookmark_icon.png",
+                          //             ),
+                          //           ),
+                          //           Expanded(
+                          //             child: Text(
+                          //               DemoLocalization.of(context)
+                          //                   .translate("bookMark"),
+                          //               style: Theme.of(context)
+                          //                   .textTheme
+                          //                   .button!
+                          //                   .merge(
+                          //                     TextStyle(
+                          //                       color: ColorsRes.textcolor,
+                          //                       fontSize: 8,
+                          //                       fontFamily:
+                          //                           "Popinns-ExtraLight",
+                          //                     ),
+                          //                   ),
+                          //             ),
+                          //           ),
+                          //         ],
+                          //       ),
+                          //     ),
+                          //   ),
+                          // ),
+                          // Positioned.directional(
+                          //   textDirection: Directionality.of(context),
+                          //   top: width! * 0.54,
+                          //   start: width! * 0.45,
+                          //   child: GestureDetector(
+                          //     onTap: () {
+                          //       if (ccatId == widget.id1) {
+                          //         setIndicator();
+                          //         setIconIndic();
+                          //         setCategory(catId);
+                          //         setTitle(widget.title!);
+                          //         ScaffoldMessenger.of(context).showSnackBar(
+                          //           const SnackBar(
+                          //             margin: EdgeInsets.all(70),
+                          //             behavior: SnackBarBehavior.floating,
+                          //             shape: RoundedRectangleBorder(
+                          //               borderRadius: BorderRadius.all(
+                          //                 Radius.circular(50),
+                          //               ),
+                          //             ),
+                          //             duration: Duration(seconds: 1),
+                          //             content: Text(
+                          //               "Indicator set Successful !",
+                          //               textAlign: TextAlign.center,
+                          //               style: TextStyle(
+                          //                   fontFamily: 'Times new Roman'),
+                          //             ),
+                          //           ),
+                          //         );
+                          //       } else {
+                          //         setIndicator();
+                          //         setState(
+                          //           () {
+                          //             getIndicator();
+                          //             setIconIndic();
+                          //           },
+                          //         );
+                          //         ScaffoldMessenger.of(context).showSnackBar(
+                          //           const SnackBar(
+                          //             margin: EdgeInsets.all(70),
+                          //             behavior: SnackBarBehavior.floating,
+                          //             shape: RoundedRectangleBorder(
+                          //                 borderRadius: BorderRadius.all(
+                          //                     Radius.circular(50))),
+                          //             duration: Duration(seconds: 1),
+                          //             content: Text(
+                          //               "Remove  Successful !",
+                          //               textAlign: TextAlign.center,
+                          //               style: TextStyle(
+                          //                   fontFamily: 'Times new Roman'),
+                          //             ),
+                          //           ),
+                          //         );
+                          //       }
+                          //     },
+                          //     child: Container(
+                          //       height: height! * 0.055,
+                          //       width: width! * 0.20,
+                          //       decoration: BoxDecoration(
+                          //         borderRadius: BorderRadius.circular(10),
+                          //         color: ColorsRes.appColor,
+                          //       ),
+                          //       child: Row(
+                          //         children: [
+                          //           Padding(
+                          //             padding: const EdgeInsets.only(
+                          //               left: 10,
+                          //               right: 4,
+                          //             ),
+                          //             child: Image.asset(
+                          //               "assets/images/$pinned_icon.png",
+                          //             ),
+                          //           ),
+                          //           Expanded(
+                          //             child: Text(
+                          //               DemoLocalization.of(context)
+                          //                   .translate("pinned"),
+                          //               style: TextStyle(
+                          //                 color: ColorsRes.textcolor,
+                          //                 fontSize: 8,
+                          //                 fontFamily: "Popinns-ExtraLight",
+                          //               ),
+                          //             ),
+                          //           ),
+                          //         ],
+                          //       ),
+                          //     ),
+                          //   ),
+                          // ),
                         ],
                       ),
                     ),
@@ -2657,7 +2660,7 @@ class DetailPage1 extends State<DetailPage>
                                                           ],
                                                         ),
                                                         const SizedBox(
-                                                          height: 20,
+                                                          height: 15,
                                                         ),
                                                         // for description start here
                                                         Stack(
@@ -2904,7 +2907,7 @@ class DetailPage1 extends State<DetailPage>
                                         ),
                                         Text(
                                           DemoLocalization.of(context).translate(
-                                              "You Have Complete this book. "),
+                                              "You Have Completed this book. "),
                                           style: TextStyle(
                                             fontSize: 14,
                                             color: dark_mode

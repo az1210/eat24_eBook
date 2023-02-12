@@ -95,32 +95,32 @@ class _LanguageWidgetState extends State<LanguageWidget> {
                   });
                   widget.update;
                 } else if (itemSelected == "3") {
-                  setState(() {
+                  setState(() async {
                     changeLanguage(context, "zh");
                   });
                   widget.update;
                 } else if (itemSelected == "4") {
-                  setState(() {
+                  setState(() async {
                     changeLanguage(context, "es");
                   });
                   widget.update;
                 } else if (itemSelected == "5") {
-                  setState(() {
+                  setState(() async {
                     changeLanguage(context, "ar");
                   });
                   widget.update;
                 } else if (itemSelected == "6") {
-                  setState(() {
+                  setState(() async {
                     changeLanguage(context, "ru");
                   });
                   widget.update;
                 } else if (itemSelected == "7") {
-                  setState(() {
+                  setState(() async {
                     changeLanguage(context, "ja");
                   });
                   widget.update;
                 } else if (itemSelected == "8") {
-                  setState(() {
+                  setState(() async {
                     changeLanguage(context, "de");
                   });
                   widget.update;

@@ -26,10 +26,10 @@ void main() async {
 
 class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
-  // static void setLocale(BuildContext context, Locale newLocale) {
-  //   _MyAppState? state = context.findAncestorStateOfType<_MyAppState>();
-  //   state!.setLocale(newLocale);
-  // }
+  static void setLocale(BuildContext context, Locale newLocale) {
+    _MyAppState? state = context.findAncestorStateOfType<_MyAppState>();
+    state!.setLocale(newLocale);
+  }
 
   @override
   _MyAppState createState() => _MyAppState();
@@ -90,7 +90,7 @@ class _MyAppState extends State<MyApp> {
       ],
       supportedLocales: const [
         Locale("en", "US"),
-        Locale("he", "HE"),
+        Locale("he", "IL"),
         Locale("zh", "CN"),
         Locale("es", "ES"),
         Locale("hi", "IN"),

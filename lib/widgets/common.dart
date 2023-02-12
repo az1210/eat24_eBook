@@ -71,9 +71,9 @@ drawerHeading(BuildContext context, bool isRTL) {
         Positioned.directional(
           textDirection: Directionality.of(context),
           top: height! * 0.34,
-          start: width! * 0.18,
+          start: width! * 0.30,
           child: Text(
-            "FLUTTER OFFLINE",
+            "EAT24",
             style: TextStyle(
                 color: ColorsRes.appColor,
                 fontSize: 16,
@@ -86,7 +86,7 @@ drawerHeading(BuildContext context, bool isRTL) {
           top: height! * 0.37,
           start: width! * 0.270,
           child: Text(
-            "EBOOK APP",
+            "",
             style: TextStyle(
               color: ColorsRes.appColor,
               fontSize: 12,
